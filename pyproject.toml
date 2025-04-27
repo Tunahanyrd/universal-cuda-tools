@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-cuda-tools"
+version = "0.1.2"
+description = "Comprehensive device management for PyTorch & TensorFlow & Universal"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [ { name = "tunahanyrd", email = "tunahanyrd@gmail.com" } ]
+requires-python = ">=3.7"
+dependencies = [
+    "torch>=1.8.0",
+    "numpy",
+    "psutil"
+]
+[tool.setuptools.packages.find]
+where = ["src"]
+[project.optional-dependencies]
+tf   = ["tensorflow"]
+tpu  = ["cloud-tpu-client"]
+cupy = ["cupy"]
+
+[project.urls]
+"Repository" = "https://github.com/tunahanyrd/universal-cuda-tools"
