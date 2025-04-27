@@ -56,7 +56,7 @@ def move_to_tf(tf_device: str, obj):
     return obj
 
 
-de⁠f watchdog(fn, timeout: float, *args, **kwargs):
+def watchdog(fn, timeout: float, *args, **kwargs):
     start = time.time()
     result = fn(*args, **kwargs)
     if timeout and time.time()-start>timeout:
