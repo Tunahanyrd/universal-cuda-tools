@@ -1,4 +1,9 @@
-elect_fastest_torch_device
+# src/cuda_tools/context.py
+"""
+DeviceContext: context manager for device + AMP + universal numpy→cupy patch.
+"""
+import contextlib, torch
+from .utils import patch_numpy_with_cupy, select_fastest_torch_device
 
 class DeviceContext:
     def __init__(self, *, device: str=None, use_amp: bool=False,

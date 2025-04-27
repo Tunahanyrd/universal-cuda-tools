@@ -1,0 +1,12 @@
+torch>=1.8.0
+numpy
+psutil
+
+[cupy]
+cupy
+
+[tf]
+tensorflow
+
+[tpu]
+cloud-tpu-client
