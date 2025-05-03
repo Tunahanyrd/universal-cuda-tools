@@ -2,7 +2,6 @@
 
 [![PyPI version](https://badge.fury.io/py/universal-cuda-tools.svg)](https://pypi.org/project/universal-cuda-tools/)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
-[GitHub](https://github.com/Tunahanyrd/universal-cuda-tools)
 
 ## What is this library?
 
